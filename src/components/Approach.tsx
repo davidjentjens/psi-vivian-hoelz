@@ -24,8 +24,41 @@ const PILLARS: { icon: LucideIcon; title: string; description: string }[] = [
 
 export default function Approach() {
   return (
-    <section id="abordagem" className="bg-bg">
-      <div className="mx-auto max-w-4xl px-6 py-24 md:py-28">
+    <section id="abordagem" className="relative overflow-hidden bg-bg">
+      {/* S-curve — left side */}
+      <svg
+        className="pointer-events-none absolute -left-12 top-1/4 h-[300px] w-[250px] text-gold/[0.05] animate-float-slower md:h-[400px] md:w-[320px]"
+        viewBox="0 0 320 400" fill="none" aria-hidden="true"
+      >
+        <path
+          d="M280 20 C 220 80, 60 120, 40 200 S 100 340, 220 380"
+          stroke="currentColor" strokeWidth="35" strokeLinecap="round" fill="none"
+        />
+      </svg>
+
+      {/* Rising flick — right side */}
+      <svg
+        className="pointer-events-none absolute -right-8 top-[10%] h-[200px] w-[200px] text-rust/[0.04] animate-float-slow [animation-delay:-4s] md:h-[280px] md:w-[280px]"
+        viewBox="0 0 280 280" fill="none" aria-hidden="true"
+      >
+        <path
+          d="M240 260 C 200 180, 140 100, 50 30"
+          stroke="currentColor" strokeWidth="22" strokeLinecap="round" fill="none"
+        />
+      </svg>
+
+      {/* Tiny scratch — bottom center */}
+      <svg
+        className="pointer-events-none absolute bottom-[8%] left-[40%] h-[80px] w-[160px] text-gold/[0.04] animate-float-slow [animation-delay:-12s]"
+        viewBox="0 0 160 80" fill="none" aria-hidden="true"
+      >
+        <path
+          d="M10 60 C 40 30, 80 50, 150 20"
+          stroke="currentColor" strokeWidth="10" strokeLinecap="round" fill="none"
+        />
+      </svg>
+
+      <div className="relative mx-auto max-w-4xl px-6 py-24 md:py-28">
         <p className="mb-3 text-center font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
           Abordagem Clínica
         </p>
@@ -43,7 +76,7 @@ export default function Approach() {
           {PILLARS.map((pillar, i) => (
             <div
               key={i}
-              className="flex items-start gap-5 border-l-2 border-gold py-1 pl-6"
+              className="flex items-start gap-5 border-l-2 border-gold py-1 pl-6 transition-transform hover:translate-x-1"
             >
               <pillar.icon
                 size={22}

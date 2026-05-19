@@ -15,8 +15,41 @@ const EXPERIENCES = [
 
 export default function Identification() {
   return (
-    <section className="bg-surface">
-      <div className="mx-auto max-w-3xl px-6 py-24 md:py-28">
+    <section className="relative overflow-hidden bg-surface">
+      {/* Wide sweeping stroke — top right */}
+      <svg
+        className="pointer-events-none absolute -right-24 -top-10 h-[280px] w-[400px] text-gold/[0.05] animate-float-slower md:h-[360px] md:w-[560px]"
+        viewBox="0 0 560 360" fill="none" aria-hidden="true"
+      >
+        <path
+          d="M520 40 C 400 80, 250 200, 60 320"
+          stroke="currentColor" strokeWidth="45" strokeLinecap="round" fill="none"
+        />
+      </svg>
+
+      {/* Curving swipe — bottom left */}
+      <svg
+        className="pointer-events-none absolute -bottom-16 -left-20 h-[200px] w-[350px] text-rust/[0.04] animate-float-slow [animation-delay:-8s] md:h-[260px] md:w-[460px]"
+        viewBox="0 0 460 260" fill="none" aria-hidden="true"
+      >
+        <path
+          d="M30 220 C 80 120, 200 40, 340 60 S 430 140, 440 200"
+          stroke="currentColor" strokeWidth="30" strokeLinecap="round" fill="none"
+        />
+      </svg>
+
+      {/* Short accent mark — mid left */}
+      <svg
+        className="pointer-events-none absolute left-[5%] top-[45%] h-[100px] w-[140px] text-gold/[0.04] animate-float-slow [animation-delay:-14s]"
+        viewBox="0 0 140 100" fill="none" aria-hidden="true"
+      >
+        <path
+          d="M15 80 C 40 50, 80 30, 125 15"
+          stroke="currentColor" strokeWidth="14" strokeLinecap="round" fill="none"
+        />
+      </svg>
+
+      <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-28">
         <p className="mb-3 text-center font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
           Identificação
         </p>
@@ -56,7 +89,7 @@ export default function Identification() {
             href={WHATSAPP_URL}
             target="_blank"
             rel="noopener noreferrer"
-            className="inline-flex items-center gap-2 rounded-full bg-gold px-8 py-3.5 font-body text-sm font-semibold tracking-wide text-white transition-colors hover:bg-gold-hover"
+            className="inline-flex items-center gap-2 rounded-full bg-gold px-8 py-3.5 font-body text-sm font-semibold tracking-wide text-white transition-all hover:bg-gold-hover hover:shadow-lg hover:-translate-y-0.5"
           >
             Quero dar o primeiro passo
             <ArrowRight size={16} strokeWidth={1.5} />

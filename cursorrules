@@ -1,6 +1,6 @@
 # Vivian's Psychology Website
 
-Build a clean, professional personal website for Vívian, a clinical psychologist based in Rio de Janeiro. The site should feel warm and welcoming — not clinical, not overly designed. All copy is in Brazilian Portuguese.
+Build a clean, professional personal website for Vívian, a clinical psychologist and actress based in Rio de Janeiro. Her practice sits at the intersection of CBT, art, and social critique ("Clínica sob a lente da TCC, Arte e Crítica social"). The site should feel warm, artistic, and welcoming — not clinical, not overly designed. Visual motifs draw from theatre (curtains, gold frames) and painting (brushstrokes, organic shapes). All copy is in Brazilian Portuguese.
 
 ---
 
@@ -43,7 +43,9 @@ Keep it simple. Generous whitespace, readable, mobile-friendly.
 
 **Como Funciona** — centered single-column list with Lucide icons. Below, a `--color-navy` rounded banner with first-appointment text and two CTAs.
 
-**Section rhythm** — a small ornamental divider between sections: thin gold horizontal rule with a tiny diamond/dot in the center. This creates visual cadence between the content blocks.
+**Section rhythm** — an organic brushstroke SVG divider between sections in gold, evoking hand-drawn artistry. Creates visual cadence without feeling geometric or corporate.
+
+**Painterly accents** — subtle, large, low-opacity organic SVG shapes (circles, freeform paths) as background accents in key sections. Gold at ~6% opacity. Inspired by the expressive painting style on Vívian's Instagram.
 
 **Icons** — Lucide React, stroke-width 1.5, no filled icons.
 

@@ -16,16 +16,27 @@ function InstagramIcon({ size = 16 }: { size?: number }) {
       strokeLinejoin="round"
     >
       <rect x="2" y="2" width="20" height="20" rx="5" />
-      <circle cx="12" cy="12" r="5" />
-      <circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none" />
+      <path d="M12 7a5 5 0 1 0 0 10 5 5 0 0 0 0-10Z" />
+      <path d="M17.5 6.5h.01" strokeWidth="2.5" />
     </svg>
   );
 }
 
 export default function Footer() {
   return (
-    <footer id="contato" className="bg-navy text-white">
-      <div className="mx-auto max-w-6xl px-6 py-14">
+    <footer id="contato" className="relative overflow-hidden bg-navy text-white">
+      {/* Subtle brushstroke — top left */}
+      <svg
+        className="pointer-events-none absolute -left-10 -top-6 h-[100px] w-[220px] text-gold/[0.06] animate-float-slower md:h-[120px] md:w-[300px]"
+        viewBox="0 0 300 120" fill="none" aria-hidden="true"
+      >
+        <path
+          d="M20 90 C 60 40, 140 20, 280 50"
+          stroke="currentColor" strokeWidth="20" strokeLinecap="round" fill="none"
+        />
+      </svg>
+
+      <div className="relative mx-auto max-w-6xl px-6 py-14">
         <div className="flex flex-col items-center gap-8 text-center md:flex-row md:justify-between md:text-left">
           <div>
             <p className="font-heading text-lg tracking-wide">Vívian Hoelz</p>
