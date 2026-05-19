@@ -7,11 +7,13 @@ import Identification from "@/components/Identification";
 import HowItWorks from "@/components/HowItWorks";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
+import WhatsAppButton from "@/components/WhatsAppButton";
 
 export default function Home() {
   return (
     <>
       <Navbar />
+      <WhatsAppButton />
       <Hero />
       <SectionDivider />
       <About />
