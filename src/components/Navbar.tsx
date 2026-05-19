@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Menu, X } from "lucide-react";
 
 const NAV_LINKS = [
@@ -16,9 +17,16 @@ export default function Navbar() {
 
   return (
     <nav className="sticky top-0 z-50 bg-navy text-white">
-      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-4">
-        <a href="#" className="font-heading text-lg tracking-wide">
-          Vívian Hoelz
+      <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
+        <a href="#" className="flex items-center gap-3 font-heading text-lg tracking-wide">
+          <Image
+            src="/logo.png"
+            alt="Logo Vívian Hoelz"
+            width={396}
+            height={630}
+            className="h-[50px] w-auto object-cover"
+          />
+          <span className="text-lg tracking-wide">Vívian Hoelz</span>
         </a>
 
         <ul className="hidden gap-8 font-body text-sm font-medium tracking-wide md:flex">
