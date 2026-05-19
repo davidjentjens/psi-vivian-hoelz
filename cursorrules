@@ -1,0 +1,167 @@
+# Vivian's Psychology Website
+
+Build a clean, professional personal website for Vívian, a clinical psychologist based in Rio de Janeiro. The site should feel warm and welcoming — not clinical, not overly designed. All copy is in Brazilian Portuguese.
+
+---
+
+## Design
+
+**Typography**
+
+- Headings: Cinzel
+- Body: Montserrat
+
+**Palette**
+
+```
+--color-gold:       #D89500   /* Harvest Gold — primary accent, CTAs, highlights */
+--color-navy:       #141E41   /* Space Indigo — headings, navbar, strong contrast */
+--color-rust:       #8A3A13   /* Rust Brown — secondary accent, warm details */
+
+--color-bg:         #F7F4EF   /* warm parchment — neutral base that flatters the three colors */
+--color-surface:    #EFEAE2   /* slightly deeper for cards and section alternates */
+--color-text:       #1A1A1A   /* near-black body text */
+--color-text-muted: #6B6560   /* warm gray for captions and subtitles */
+--color-border:     #DDD6CC   /* soft divider */
+```
+
+Use the navy for headings and the navbar. Gold for CTA buttons and key accents. Rust sparingly — decorative details, hover states, or small graphic elements. The parchment background keeps everything from feeling heavy.
+
+Keep it simple. Generous whitespace, readable, mobile-friendly.
+
+---
+
+## Layout Patterns
+
+**Overall feel** — editorial / magazine-like. Generous whitespace, asymmetric layouts where text and photos don't always perfectly mirror each other. The site should feel hand-crafted, not generated from a template.
+
+**Hero** — two-column grid. Left: small gold uppercase tracking-widest subtitle, then large Cinzel heading with one *italic* word for personality (e.g. "Um espaço para você *ser* quem é."), body text, CTA. Right: portrait photo placeholder with a thin gold border frame offset ~8px behind it (not touching — creates depth without a shadow blob). No arch shapes.
+
+**Sobre mim** — photo on the left with a decorative offset border frame (thin gold, shifted -8px up and left). Text on the right opens with a large styled pull-quote "Olá, tudo bem?" before the body paragraphs.
+
+**TCC Pillars** — three horizontal rows. Each has a gold left border-l-2, Lucide icon, title, and description. No card fills, no card borders. Clean editorial spacing.
+
+**Como Funciona** — centered single-column list with Lucide icons. Below, a `--color-navy` rounded banner with first-appointment text and two CTAs.
+
+**Section rhythm** — a small ornamental divider between sections: thin gold horizontal rule with a tiny diamond/dot in the center. This creates visual cadence between the content blocks.
+
+**Icons** — Lucide React, stroke-width 1.5, no filled icons.
+
+---
+
+## Sections & Content
+
+### Navbar
+
+Name / logo on the left. Links to each section on the right.
+
+---
+
+### Hero
+
+- Heading: **"Vívian Hoelz"** (name as h1)
+- Subtitle: **"Cuidado ético, sensível e fundamentado."** (Cinzel, navy)
+- Brief intro: psicóloga clínica, atriz, formada pela UFRJ
+- CTA button: **"Quero dar o primeiro passo"** → WhatsApp link (`https://wa.me/5521992149349`)
+- Placeholder for a photo of Vivian
+
+---
+
+### Sobre mim
+
+> Olá, tudo bem? Seja bem-vindo(a)!
+>
+> Me chamo Vívian, sou psicóloga clínica formada pela Universidade Federal do Rio de Janeiro (UFRJ) e também atriz. Tenho pós-graduação em Neuropsicologia dos Transtornos Mentais e, atualmente, sou pós-graduanda em Terapia Cognitivo-Comportamental pela PUC-Rio.
+>
+> Minha escolha pela Psicologia nasceu da curiosidade sobre a vida humana e seus processos psicológicos. Ao longo da minha trajetória, essa curiosidade se transformou em compromisso: oferecer um cuidado ético, sensível e fundamentado, que considere a singularidade de cada pessoa.
+>
+> Acredito em uma psicologia contextualizada, que não se limita ao indivíduo isolado, mas que também leva em conta os atravessamentos sociais, culturais e históricos que impactam a forma como pensamos, sentimos e nos relacionamos.
+>
+> Meu objetivo é construir, junto com você, um espaço seguro, acolhedor e livre de julgamentos — onde você possa ser quem é, com autenticidade.
+
+---
+
+### Sobre a Abordagem
+
+> A Terapia Cognitivo-Comportamental (TCC) é uma abordagem baseada em evidências que busca compreender como pensamentos, emoções e comportamentos se influenciam, promovendo mudanças possíveis no seu dia a dia.
+
+Three pillars:
+
+1. **Escuta ativa** — Um espaço de escuta atenta e sensível, onde sua experiência é acolhida com cuidado e sem julgamentos.
+2. **Colaboração** — A terapia é construída em conjunto, respeitando seu ritmo, sua história e seus objetivos.
+3. **Foco no presente** — O trabalho parte do que você está vivendo agora, entendendo como isso se conecta com seus padrões e sua trajetória.
+
+---
+
+### Você se identifica?
+
+> Você sente que algo não está bem, mas não sabe exatamente por onde começar?
+>
+> Às vezes, o sofrimento aparece de formas sutis no dia a dia. Talvez você se identifique com algumas dessas experiências:
+
+- Sua mente não descansa, mesmo quando você tenta descansar
+- Você se cobra demais e sente que nunca é suficiente
+- Tem dificuldade de dizer o que sente ou se posicionar nas relações
+- Sente-se sobrecarregado(a), como se estivesse sempre no limite
+- Percebe que repete padrões que te fazem sofrer
+- Evita situações por medo, insegurança ou ansiedade
+- Sente um cansaço emocional constante, mesmo sem um motivo claro
+- Quer se entender melhor, mas não sabe por onde começar
+
+> Se você se identificou com alguma dessas experiências, saiba: isso não é fraqueza. É um sinal de que algo merece cuidado, escuta e atenção. A terapia pode ser um espaço para compreender o que está acontecendo e construir novas formas de lidar com isso.
+
+CTA: **"Quero dar o primeiro passo"** → WhatsApp link
+
+---
+
+### Como funciona
+
+- Sessões de 50 minutos
+- Frequência semanal (ajustável conforme necessidade)
+- Atendimento online (Google Meet) ou presencial no Rio de Janeiro
+- Ambiente ético, sigiloso e acolhedor
+
+CTAs: **"Preencher formulário"** → form link | **"Falar pelo WhatsApp"** → WhatsApp link
+
+---
+
+### Dúvidas Frequentes (FAQ accordion)
+
+**O que posso trabalhar na terapia?**
+A terapia é um espaço para olhar para diferentes aspectos da sua vida, como ansiedade, depressão, autoestima, relacionamentos, comunicação, esgotamento emocional ou simplesmente o desejo de se entender melhor.
+
+**Qual a duração das sessões?**
+As sessões têm duração de 50 minutos.
+
+**Qual a frequência dos atendimentos?**
+A frequência costuma ser semanal, mas pode ser ajustada de acordo com suas necessidades e o momento que você está vivendo.
+
+**Como funciona a primeira sessão?**
+A primeira sessão é um espaço de acolhimento e escuta, onde vamos nos conhecer, compreender sua demanda e alinhar expectativas sobre o processo terapêutico.
+
+**Como funcionam os atendimentos online?**
+Os atendimentos online acontecem por videochamada via Google Meet, em um ambiente sigiloso. É importante que você esteja em um local privado, onde se sinta confortável para falar.
+
+**A terapia online é eficaz?**
+Sim. A terapia online é regulamentada e pode ser tão eficaz quanto a presencial, mantendo a qualidade do cuidado.
+
+**Preciso saber exatamente o que estou sentindo para começar?**
+Não. Muitas vezes, a terapia começa justamente a partir dessa dúvida. Você não precisa chegar com tudo claro, construímos isso juntos/as.
+
+**Tenho dificuldade de me expressar. A terapia pode me ajudar?**
+Sim. A terapia é também um espaço para desenvolver formas de se expressar com mais clareza, no seu tempo e com segurança.
+
+**Como faço para agendar uma sessão?**
+Você pode entrar em contato pelo formulário do site ou diretamente pelo WhatsApp para tirar dúvidas e agendar um horário.
+
+**Qual o valor das sessões?**
+Para informações sobre valores e disponibilidade, entre em contato. Assim consigo te orientar de acordo com sua necessidade.
+
+---
+
+### Footer
+
+- Nome + CRP (a preencher)
+- WhatsApp link
+- Instagram link (a preencher)
+- "Atendimento online para todo o Brasil | Presencial no Rio de Janeiro"

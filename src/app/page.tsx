@@ -1,9 +1,29 @@
+import Navbar from "@/components/Navbar";
+import Hero from "@/components/Hero";
+import SectionDivider from "@/components/SectionDivider";
+import About from "@/components/About";
+import Approach from "@/components/Approach";
+import Identification from "@/components/Identification";
+import HowItWorks from "@/components/HowItWorks";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
+
 export default function Home() {
   return (
-    <div className="flex flex-1 items-center justify-center">
-      <h1 className="text-2xl font-medium text-foreground">
-        Vivian Hoelz — Psicóloga
-      </h1>
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <SectionDivider />
+      <About />
+      <SectionDivider />
+      <Approach />
+      <SectionDivider />
+      <Identification />
+      <SectionDivider />
+      <HowItWorks />
+      <SectionDivider />
+      <FAQ />
+      <Footer />
+    </>
   );
 }

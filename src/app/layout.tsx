@@ -1,16 +1,23 @@
 import type { Metadata } from "next";
-import { Geist } from "next/font/google";
+import { Cinzel, Montserrat } from "next/font/google";
 import "./globals.css";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const cinzel = Cinzel({
+  variable: "--font-cinzel",
   subsets: ["latin"],
+  display: "swap",
+});
+
+const montserrat = Montserrat({
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+  display: "swap",
 });
 
 export const metadata: Metadata = {
-  title: "Vivian Hoelz — Psicóloga",
+  title: "Vívian Hoelz — Psicóloga",
   description:
-    "Psicóloga Vivian Hoelz — Atendimento psicológico profissional.",
+    "Psicóloga clínica Vívian Hoelz — Atendimento psicológico online e presencial no Rio de Janeiro. Terapia Cognitivo-Comportamental (TCC).",
 };
 
 export default function RootLayout({
@@ -19,8 +26,12 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="pt-BR" className={`${geistSans.variable} h-full antialiased`} suppressHydrationWarning>
-      <body className="min-h-full flex flex-col">{children}</body>
+    <html
+      lang="pt-BR"
+      className={`${cinzel.variable} ${montserrat.variable} antialiased`}
+      suppressHydrationWarning
+    >
+      <body>{children}</body>
     </html>
   );
 }
