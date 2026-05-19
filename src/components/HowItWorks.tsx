@@ -9,7 +9,8 @@ import {
 import type { LucideIcon } from "lucide-react";
 
 const WHATSAPP_URL = "https://wa.me/5521992149349";
-const FORM_URL = "#contato";
+const FORM_URL =
+  "https://docs.google.com/forms/d/e/1FAIpQLSdMcx1Dz36rkHrTjKFWV909WtfdBE7f61BjN1spD2lItlXitA/viewform";
 
 const CHECKLIST: { icon: LucideIcon; text: string }[] = [
   { icon: Clock, text: "Sessões de 50 minutos" },
@@ -98,6 +99,8 @@ export default function HowItWorks() {
           <div className="flex flex-col gap-3 sm:flex-row">
             <a
               href={FORM_URL}
+              target="_blank"
+              rel="noopener noreferrer"
               className="inline-flex items-center justify-center gap-2 rounded-full bg-gold px-6 py-3 font-body text-sm font-semibold tracking-wide text-white transition-all hover:bg-gold-hover hover:shadow-lg hover:-translate-y-0.5"
             >
               <FileText size={16} strokeWidth={1.5} />
