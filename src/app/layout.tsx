@@ -15,9 +15,36 @@ const montserrat = Montserrat({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL("https://psivivianhoelz.com.br"),
   title: "Vívian Hoelz — Psicóloga",
   description:
     "Psicóloga clínica Vívian Hoelz — Atendimento psicológico online e presencial no Rio de Janeiro. Terapia Cognitivo-Comportamental (TCC).",
+  icons: {
+    icon: "/favicon.png",
+    apple: "/favicon.png",
+  },
+  openGraph: {
+    title: "Vívian Hoelz — Psicóloga Clínica",
+    description:
+      "Atendimento psicológico online e presencial no Rio de Janeiro. Terapia Cognitivo-Comportamental (TCC), com olhar sensível e fundamentado.",
+    images: [
+      {
+        url: "/banner.jpeg",
+        width: 1200,
+        height: 630,
+        alt: "Vívian Hoelz — Psicóloga Clínica",
+      },
+    ],
+    locale: "pt_BR",
+    type: "website",
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Vívian Hoelz — Psicóloga Clínica",
+    description:
+      "Atendimento psicológico online e presencial no Rio de Janeiro. Terapia Cognitivo-Comportamental (TCC).",
+    images: ["/banner.jpeg"],
+  },
 };
 
 export default function RootLayout({
