@@ -44,16 +44,39 @@ export default function Hero() {
         </div>
 
         <div className="flex items-center justify-center">
-          <div className="relative">
-            <div className="absolute -right-2 -bottom-2 h-full w-full rounded-2xl border-2 border-gold/40" />
-            <Image
-              src="/vivian-hero2.jpeg"
-              alt="Vivian Hoelz — Psicóloga"
-              width={360}
-              height={500}
-              className="relative h-[500px] w-full max-w-[360px] rounded-2xl object-cover"
-              priority
-            />
+          <div className="relative w-full max-w-[380px]">
+            <svg
+              viewBox="0 56 192 200"
+              className="h-auto w-full"
+              role="img"
+              aria-label="Vivian Hoelz — Psicóloga"
+            >
+              <defs>
+                <clipPath id="vivBody">
+                  {/* Head region — lets the top of her head sit outside the blob */}
+                  <rect x="0" y="0" width="192" height="125" />
+                  {/* Body region — clipped to the blob outline */}
+                  <path d="M88.1 100.6 C 122.2 91.8, 161.7 100.4, 177.2 138.6 C 189.3 167.2, 183.6 198.3, 160.3 219.7 C 137.1 241.2, 98 250.7, 68.1 238.7 C 38.1 226.8, 18.1 199.3, 17.3 165.1 C 16.6 130.9, 53.9 109.5, 88.1 100.6 Z" />
+                </clipPath>
+              </defs>
+
+              {/* Camel ameba blob backdrop (tilted) */}
+              <path
+                d="M88.1 100.6 C 122.2 91.8, 161.7 100.4, 177.2 138.6 C 189.3 167.2, 183.6 198.3, 160.3 219.7 C 137.1 241.2, 98 250.7, 68.1 238.7 C 38.1 226.8, 18.1 199.3, 17.3 165.1 C 16.6 130.9, 53.9 109.5, 88.1 100.6 Z"
+                fill="#C9A074"
+              />
+
+              {/* Profile — body merges into the blob, head escapes through the top rect */}
+              <image
+                href="/vivian-hero-v5.png"
+                x="0"
+                y="0"
+                width="192"
+                height="256"
+                clipPath="url(#vivBody)"
+                preserveAspectRatio="xMidYMid slice"
+              />
+            </svg>
           </div>
         </div>
       </div>
