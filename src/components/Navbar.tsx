@@ -16,7 +16,7 @@ export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="sticky top-0 z-50 bg-navy text-white">
+    <nav className="sticky top-0 z-50 border-b border-black/5 text-navy backdrop-blur-sm">
       <div className="mx-auto flex max-w-6xl items-center justify-between px-6 py-2">
         <a href="#" className="flex items-center gap-3 font-heading text-lg tracking-wide">
           <Image
@@ -24,7 +24,7 @@ export default function Navbar() {
             alt="Logo Vivian Hoelz"
             width={396}
             height={630}
-            className="h-[50px] w-auto object-cover"
+            className="h-[50px] w-auto object-cover brightness-0"
           />
           <span className="text-lg tracking-wide">Vivian Hoelz</span>
         </a>
@@ -56,7 +56,7 @@ export default function Navbar() {
       </div>
 
       {menuOpen && (
-        <ul className="flex flex-col gap-4 bg-navy px-6 pb-6 font-body text-base tracking-wide md:hidden">
+        <ul className="flex flex-col gap-4 border-t border-black/5 bg-bg/95 px-6 pb-6 pt-2 font-body text-base tracking-wide backdrop-blur md:hidden">
           {NAV_LINKS.map((link) => (
             <li key={link.href}>
               <a
