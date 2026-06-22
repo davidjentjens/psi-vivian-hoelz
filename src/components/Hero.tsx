@@ -45,7 +45,7 @@ export default function Hero() {
             Psicóloga Clínica · CRP 05/81124
           </p>
           <h1 className="text-4xl leading-[1.15] md:text-[3.25rem]">
-            Vívian Hoelz
+            Vivian Hoelz
           </h1>
           <p className="text-xl leading-snug tracking-wide text-navy md:text-2xl">
             Clínica sob a lente da TCC, Arte e Crítica social.
@@ -70,7 +70,7 @@ export default function Hero() {
             <div className="absolute -right-2 -bottom-2 h-full w-full rounded-2xl border-2 border-gold/40" />
             <Image
               src="/vivian-hero.jpg"
-              alt="Vívian Hoelz — Psicóloga"
+              alt="Vivian Hoelz — Psicóloga"
               width={360}
               height={500}
               className="relative h-[500px] w-full max-w-[360px] rounded-2xl object-cover"

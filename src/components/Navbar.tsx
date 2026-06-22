@@ -21,12 +21,12 @@ export default function Navbar() {
         <a href="#" className="flex items-center gap-3 font-heading text-lg tracking-wide">
           <Image
             src="/logo.png"
-            alt="Logo Vívian Hoelz"
+            alt="Logo Vivian Hoelz"
             width={396}
             height={630}
             className="h-[50px] w-auto object-cover"
           />
-          <span className="text-lg tracking-wide">Vívian Hoelz</span>
+          <span className="text-lg tracking-wide">Vivian Hoelz</span>
         </a>
 
         <ul className="hidden gap-8 font-body text-sm font-medium tracking-wide md:flex">

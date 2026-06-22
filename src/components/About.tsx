@@ -32,7 +32,7 @@ export default function About() {
             <div className="absolute -top-2 -left-2 h-full w-full rounded-2xl border-2 border-gold/40" />
             <Image
               src="/vivian-sobre.jpg"
-              alt="Vívian Hoelz"
+              alt="Vivian Hoelz"
               width={320}
               height={440}
               className="relative h-[440px] w-full max-w-[320px] rounded-2xl object-cover"

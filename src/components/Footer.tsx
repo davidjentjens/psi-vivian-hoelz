@@ -39,7 +39,7 @@ export default function Footer() {
       <div className="relative mx-auto max-w-6xl px-6 py-14">
         <div className="flex flex-col items-center gap-8 text-center md:flex-row md:justify-between md:text-left">
           <div>
-            <p className="font-heading text-lg tracking-wide">Vívian Hoelz</p>
+            <p className="font-heading text-lg tracking-wide">Vivian Hoelz</p>
             <p className="mt-1 text-sm text-white/90">
               Psicóloga — CRP 05/81124
             </p>
