@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 export default function About() {
   return (
     <section id="sobre" className="relative overflow-hidden bg-surface">
@@ -25,22 +23,8 @@ export default function About() {
         />
       </svg>
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-6 py-24 md:grid-cols-5 md:py-28">
-        {/* Photo with offset gold frame */}
-        <div className="flex items-center justify-center md:col-span-2">
-          <div className="relative">
-            <div className="absolute -top-2 -left-2 h-full w-full rounded-2xl border-2 border-gold/40" />
-            <Image
-              src="/vivian-sobre.jpg"
-              alt="Vivian Hoelz"
-              width={320}
-              height={440}
-              className="relative h-[440px] w-full max-w-[320px] rounded-2xl object-cover"
-            />
-          </div>
-        </div>
-
-        <div className="flex flex-col gap-6 md:col-span-3">
+      <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-28">
+        <div className="flex flex-col gap-6">
           <p className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
             Psicóloga · Atriz · UFRJ
           </p>

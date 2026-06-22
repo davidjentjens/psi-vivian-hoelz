@@ -60,7 +60,7 @@ export default function Hero() {
             rel="noopener noreferrer"
             className="mt-2 inline-flex w-fit items-center gap-2 rounded-full bg-gold px-8 py-3.5 font-body text-sm font-semibold tracking-wide text-white transition-all hover:bg-gold-hover hover:shadow-lg hover:-translate-y-0.5"
           >
-            Quero dar o primeiro passo
+            Agendar Sessão
             <ArrowRight size={16} strokeWidth={1.5} />
           </a>
         </div>
