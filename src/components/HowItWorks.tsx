@@ -63,14 +63,14 @@ export default function HowItWorks() {
           ))}
         </div>
 
-        <div className="rounded-2xl bg-navy px-8 py-10 text-white md:px-12">
+        <div className="rounded-2xl border border-border bg-surface/80 px-8 py-10 shadow-sm backdrop-blur-sm md:px-12">
           <p className="mb-2 font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
             Primeiro passo
           </p>
-          <h3 className="mb-4 font-heading text-xl text-white">
+          <h3 className="mb-4 font-heading text-xl text-navy">
             Primeira sessão
           </h3>
-          <p className="mb-8 max-w-lg text-sm leading-relaxed text-white/80">
+          <p className="mb-8 max-w-lg text-sm leading-relaxed text-text-muted">
             A primeira sessão é um espaço de acolhimento e escuta, onde vamos
             nos conhecer, compreender sua demanda e alinhar expectativas sobre
             o processo terapêutico.
@@ -89,7 +89,7 @@ export default function HowItWorks() {
               href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
-              className="inline-flex items-center justify-center gap-2 rounded-full border border-white/25 px-6 py-3 font-body text-sm font-semibold tracking-wide text-white transition-all hover:bg-white/10 hover:-translate-y-0.5"
+              className="inline-flex items-center justify-center gap-2 rounded-full border border-navy/20 px-6 py-3 font-body text-sm font-semibold tracking-wide text-navy transition-all hover:bg-navy/5 hover:-translate-y-0.5"
             >
               Falar pelo WhatsApp
               <ArrowRight size={16} strokeWidth={1.5} />
