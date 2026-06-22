@@ -44,9 +44,9 @@ export default function Hero() {
         </div>
 
         <div className="flex items-center justify-center">
-          <div className="relative w-full max-w-[380px]">
+          <div className="relative w-full max-w-[460px]">
             <svg
-              viewBox="0 56 192 200"
+              viewBox="-8 54 208 210"
               className="h-auto w-full"
               role="img"
               aria-label="Vivian Hoelz — Psicóloga"
@@ -59,6 +59,15 @@ export default function Hero() {
                   <path d="M88.1 100.6 C 122.2 91.8, 161.7 100.4, 177.2 138.6 C 189.3 167.2, 183.6 198.3, 160.3 219.7 C 137.1 241.2, 98 250.7, 68.1 238.7 C 38.1 226.8, 18.1 199.3, 17.3 165.1 C 16.6 130.9, 53.9 109.5, 88.1 100.6 Z" />
                 </clipPath>
               </defs>
+
+              {/* Padded contour line tracing the blob (sits behind the photo) */}
+              <path
+                d="M88.1 100.6 C 122.2 91.8, 161.7 100.4, 177.2 138.6 C 189.3 167.2, 183.6 198.3, 160.3 219.7 C 137.1 241.2, 98 250.7, 68.1 238.7 C 38.1 226.8, 18.1 199.3, 17.3 165.1 C 16.6 130.9, 53.9 109.5, 88.1 100.6 Z"
+                fill="none"
+                stroke="#8A3A13"
+                strokeWidth={1.4}
+                transform="translate(96 150) scale(1.06) translate(-96 -150)"
+              />
 
               {/* Camel ameba blob backdrop (tilted) */}
               <path
