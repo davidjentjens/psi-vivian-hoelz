@@ -1,27 +1,18 @@
+import Image from "next/image";
+
 export default function About() {
   return (
     <section id="sobre" className="relative overflow-hidden bg-surface">
-      {/* Loose diagonal stroke — upper right */}
-      <svg
-        className="pointer-events-none absolute -right-16 -top-8 h-[250px] w-[300px] text-gold/[0.05] animate-float-slower md:h-[340px] md:w-[420px]"
-        viewBox="0 0 420 340" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M380 30 C 300 60, 180 140, 60 300"
-          stroke="currentColor" strokeWidth="40" strokeLinecap="round" fill="none"
+      {/* Watercolor wash — anchored top right */}
+      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+        <Image
+          src="/background-top-right.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-right-top opacity-[0.4] animate-drift-alt"
         />
-      </svg>
-
-      {/* Gentle curve — bottom left */}
-      <svg
-        className="pointer-events-none absolute -bottom-12 -left-20 h-[180px] w-[350px] text-rust/[0.04] animate-float-slow [animation-delay:-10s] md:h-[220px] md:w-[450px]"
-        viewBox="0 0 450 220" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M30 180 C 100 60, 250 20, 420 90"
-          stroke="currentColor" strokeWidth="28" strokeLinecap="round" fill="none"
-        />
-      </svg>
+      </div>
 
       <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-28">
         <div className="flex flex-col gap-6">

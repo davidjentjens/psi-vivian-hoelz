@@ -6,38 +6,16 @@ const WHATSAPP_URL = "https://wa.me/5521992149349";
 export default function Hero() {
   return (
     <section className="relative overflow-hidden bg-bg">
-      {/* Sweeping arc — top left */}
-      <svg
-        className="pointer-events-none absolute -left-24 -top-20 h-[350px] w-[350px] text-rust/[0.06] animate-float-slow md:h-[500px] md:w-[500px]"
-        viewBox="0 0 500 500" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M60 400 C 60 180, 180 60, 400 60"
-          stroke="currentColor" strokeWidth="50" strokeLinecap="round" fill="none"
+      {/* Watercolor wash — full composition */}
+      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+        <Image
+          src="/background.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="object-cover object-center opacity-[0.38] animate-drift"
         />
-      </svg>
-
-      {/* Long horizontal wave — bottom right */}
-      <svg
-        className="pointer-events-none absolute -bottom-16 -right-20 h-[200px] w-[500px] text-gold/[0.06] animate-float-slower md:w-[700px]"
-        viewBox="0 0 700 200" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M20 140 C 80 60, 160 160, 260 100 S 400 30, 500 90 S 600 150, 680 80"
-          stroke="currentColor" strokeWidth="35" strokeLinecap="round" fill="none"
-        />
-      </svg>
-
-      {/* Short gestural flick — mid right */}
-      <svg
-        className="pointer-events-none absolute right-[5%] top-[35%] h-[120px] w-[180px] text-gold/[0.05] animate-float-slow [animation-delay:-6s] md:h-[160px] md:w-[240px]"
-        viewBox="0 0 240 160" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M20 130 C 60 80, 120 40, 200 25"
-          stroke="currentColor" strokeWidth="18" strokeLinecap="round" fill="none"
-        />
-      </svg>
+      </div>
 
       <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-6 py-24 md:grid-cols-2 md:py-36">
         <div className="flex flex-col gap-6">
@@ -69,7 +47,7 @@ export default function Hero() {
           <div className="relative">
             <div className="absolute -right-2 -bottom-2 h-full w-full rounded-2xl border-2 border-gold/40" />
             <Image
-              src="/vivian-hero.jpg"
+              src="/vivian-hero2.jpeg"
               alt="Vivian Hoelz — Psicóloga"
               width={360}
               height={500}

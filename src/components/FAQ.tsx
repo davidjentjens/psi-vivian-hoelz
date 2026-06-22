@@ -77,27 +77,6 @@ function AccordionItem({ q, a }: { q: string; a: string }) {
 export default function FAQ() {
   return (
     <section id="duvidas" className="relative overflow-hidden bg-surface">
-      {/* Animated gestural strokes */}
-      <svg
-        className="pointer-events-none absolute -right-6 -top-4 h-[200px] w-[200px] text-gold/[0.06] animate-float-slow md:h-[280px] md:w-[280px]"
-        viewBox="0 0 280 280" fill="none" aria-hidden="true"
-      >
-        <path d="M220 30 C 180 80, 120 60, 80 120" stroke="currentColor" strokeWidth="12" strokeLinecap="round" fill="none" />
-        <path d="M250 70 C 200 130, 140 100, 100 170" stroke="currentColor" strokeWidth="8" strokeLinecap="round" fill="none" />
-        <path d="M200 10 C 170 50, 130 40, 90 80" stroke="currentColor" strokeWidth="5" strokeLinecap="round" fill="none" />
-      </svg>
-
-      {/* Loose curve — bottom left */}
-      <svg
-        className="pointer-events-none absolute -bottom-10 -left-16 h-[180px] w-[320px] text-rust/[0.04] animate-float-slower [animation-delay:-6s] md:h-[220px] md:w-[400px]"
-        viewBox="0 0 400 220" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M20 200 C 80 100, 200 30, 380 70"
-          stroke="currentColor" strokeWidth="26" strokeLinecap="round" fill="none"
-        />
-      </svg>
-
       <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-28">
         <p className="mb-3 text-center font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
           Perguntas Comuns

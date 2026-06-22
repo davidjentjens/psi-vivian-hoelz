@@ -48,32 +48,49 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 /* Animated background elements */
-@keyframes float-slow {
-  0%, 100% { transform: translate(0, 0) rotate(0deg); }
-  33% { transform: translate(12px, -18px) rotate(2deg); }
-  66% { transform: translate(-8px, 10px) rotate(-1deg); }
-}
-
-@keyframes float-slower {
-  0%, 100% { transform: translate(0, 0) scale(1); }
-  50% { transform: translate(-15px, 12px) scale(1.04); }
-}
-
 @keyframes draw-in {
   from { stroke-dashoffset: 400; }
   to { stroke-dashoffset: 0; }
-}
-
-.animate-float-slow {
-  animation: float-slow 18s ease-in-out infinite;
-}
-
-.animate-float-slower {
-  animation: float-slower 24s ease-in-out infinite;
 }
 
 .animate-draw-in {
   stroke-dasharray: 400;
   stroke-dashoffset: 400;
   animation: draw-in 2s ease-out forwards;
+}
+
+/* Gentle, GPU-composited drift for the watercolor section backgrounds.
+   translate3d + will-change keep the motion fluid; the base scale provides
+   overscan so the drift never reveals edges. */
+@keyframes drift {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1.1); }
+  50% { transform: translate3d(2.2%, -1.8%, 0) scale(1.16); }
+}
+
+@keyframes drift-alt {
+  0%, 100% { transform: translate3d(0, 0, 0) scale(1.12); }
+  50% { transform: translate3d(-2%, 1.6%, 0) scale(1.18); }
+}
+
+.animate-drift,
+.animate-drift-alt {
+  will-change: transform;
+  backface-visibility: hidden;
+  transform: translateZ(0);
+}
+
+.animate-drift {
+  animation: drift 14s ease-in-out infinite;
+}
+
+.animate-drift-alt {
+  animation: drift-alt 17s ease-in-out infinite;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-drift,
+  .animate-drift-alt {
+    animation: none;
+    transform: scale(1.08);
+  }
 }

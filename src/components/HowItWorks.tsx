@@ -28,39 +28,6 @@ const CHECKLIST: { icon: LucideIcon; text: string }[] = [
 export default function HowItWorks() {
   return (
     <section id="como-funciona" className="relative overflow-hidden bg-bg">
-      {/* Wavy line — top right */}
-      <svg
-        className="pointer-events-none absolute -right-10 top-6 h-[100px] w-[300px] text-gold/[0.07] animate-float-slow md:w-[500px]"
-        viewBox="0 0 500 100" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M10 50 C 60 10, 120 90, 180 50 S 300 10, 360 50 S 440 90, 490 40"
-          stroke="currentColor" strokeWidth="18" strokeLinecap="round" fill="none"
-        />
-      </svg>
-
-      {/* Sweeping arc — bottom left */}
-      <svg
-        className="pointer-events-none absolute -bottom-14 -left-16 h-[220px] w-[350px] text-rust/[0.04] animate-float-slower md:h-[280px] md:w-[460px]"
-        viewBox="0 0 460 280" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M40 250 C 100 140, 220 40, 420 60"
-          stroke="currentColor" strokeWidth="32" strokeLinecap="round" fill="none"
-        />
-      </svg>
-
-      {/* Quick flick — right edge mid */}
-      <svg
-        className="pointer-events-none absolute right-[2%] top-[50%] h-[90px] w-[120px] text-gold/[0.04] animate-float-slow [animation-delay:-9s]"
-        viewBox="0 0 120 90" fill="none" aria-hidden="true"
-      >
-        <path
-          d="M15 75 C 40 40, 70 20, 105 10"
-          stroke="currentColor" strokeWidth="12" strokeLinecap="round" fill="none"
-        />
-      </svg>
-
       <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-28">
         <p className="mb-3 text-center font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
           O Processo
