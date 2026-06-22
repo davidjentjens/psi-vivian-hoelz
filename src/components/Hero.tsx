@@ -13,12 +13,12 @@ export default function Hero() {
           alt=""
           fill
           sizes="100vw"
-          className="object-cover object-center opacity-[0.38] animate-drift"
+          className="object-cover object-center opacity-[0.55] animate-drift [animation-duration:18s]"
         />
       </div>
 
-      <div className="relative mx-auto grid max-w-6xl items-center gap-16 px-6 py-24 md:grid-cols-2 md:py-36">
-        <div className="flex flex-col gap-6">
+      <div className="relative mx-auto grid max-w-6xl items-center gap-8 px-6 py-16 md:grid-cols-2 md:gap-16 md:py-36">
+        <div className="order-2 flex flex-col gap-6 md:order-1">
           <p className="font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
             Psicóloga Clínica · CRP 05/81124
           </p>
@@ -43,8 +43,8 @@ export default function Hero() {
           </a>
         </div>
 
-        <div className="flex items-center justify-center">
-          <div className="relative w-full max-w-[460px]">
+        <div className="order-1 flex items-center justify-center md:order-2">
+          <div className="relative w-full max-w-[340px] md:max-w-[510px]">
             <svg
               viewBox="-8 54 208 210"
               className="h-auto w-full"
