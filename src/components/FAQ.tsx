@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import Image from "next/image";
 import { Plus, Minus } from "lucide-react";
 
 const QUESTIONS = [
@@ -77,6 +78,17 @@ function AccordionItem({ q, a }: { q: string; a: string }) {
 export default function FAQ() {
   return (
     <section id="duvidas" className="relative overflow-hidden bg-surface">
+      {/* Watercolor wash — top-right artwork flipped on both axes */}
+      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+        <Image
+          src="/background-top-right.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="-scale-100 object-cover object-right-top opacity-[0.4] animate-drift-alt"
+        />
+      </div>
+
       <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-28">
         <p className="mb-3 text-center font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
           Perguntas Comuns

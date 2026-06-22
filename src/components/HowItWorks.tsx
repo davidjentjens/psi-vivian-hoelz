@@ -7,6 +7,7 @@ import {
   FileText,
 } from "lucide-react";
 import type { LucideIcon } from "lucide-react";
+import Image from "next/image";
 
 const WHATSAPP_URL = "https://wa.me/5521992149349";
 const FORM_URL =
@@ -28,6 +29,17 @@ const CHECKLIST: { icon: LucideIcon; text: string }[] = [
 export default function HowItWorks() {
   return (
     <section id="como-funciona" className="relative overflow-hidden bg-bg">
+      {/* Watercolor wash — top-right artwork flipped horizontally */}
+      <div className="pointer-events-none absolute inset-0" aria-hidden="true">
+        <Image
+          src="/background-top-right.png"
+          alt=""
+          fill
+          sizes="100vw"
+          className="-scale-x-100 object-cover object-right-top opacity-[0.35] animate-drift"
+        />
+      </div>
+
       <div className="relative mx-auto max-w-3xl px-6 py-24 md:py-28">
         <p className="mb-3 text-center font-body text-xs font-semibold uppercase tracking-[0.2em] text-gold">
           O Processo
