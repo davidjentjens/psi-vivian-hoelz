@@ -1,4 +1,5 @@
 import { MessageCircle } from "lucide-react";
+import Image from "next/image";
 
 const WHATSAPP_URL = "https://wa.me/5521992149349";
 const INSTAGRAM_URL = "https://instagram.com/psivivianhoelz";
@@ -27,11 +28,20 @@ export default function Footer() {
     <footer id="contato" className="relative overflow-hidden bg-navy text-white">
       <div className="relative mx-auto max-w-6xl px-6 py-14">
         <div className="flex flex-col items-center gap-8 text-center md:flex-row md:justify-between md:text-left">
-          <div>
-            <p className="font-heading text-lg tracking-wide">Vivian Hoelz</p>
-            <p className="mt-1 text-sm text-white/90">
-              Psicóloga — CRP 05/81124
-            </p>
+          <div className="flex flex-col items-center gap-4 sm:flex-row sm:text-left">
+            <Image
+              src="/logo.png"
+              alt="Logo Vivian Hoelz"
+              width={396}
+              height={630}
+              className="h-28 w-auto shrink-0 object-contain"
+            />
+            <div>
+              <p className="font-heading text-lg tracking-wide">Vivian Hoelz</p>
+              <p className="mt-1 text-sm text-white/90">
+                Psicóloga — CRP 05/81124
+              </p>
+            </div>
           </div>
 
           <div className="flex flex-col items-center gap-3 text-sm font-medium md:items-end">
